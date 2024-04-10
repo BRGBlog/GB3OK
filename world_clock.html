@@ -1,0 +1,806 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="/Templates/template_worldclock.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>World Clock</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="The Bromley Repeater Group was formed to launch and maintain the new Kent repeater, GB3OK, and later, GB7OK.  Located in Orpington and with an ASL of 600 feet, these repeaters provide coverage over a large area of London and South East England.">
+<meta name="keywords" content="dstar,d-star,gb3ok,gb7ok,g1hig,g6xfi,m0cry,g7uzn,g0uja,g8rde,g7wir,g1upt,bromley repeater group,bromley,repeater,orpington,kent,chelsfield,well hill,rock hill">
+<link rel="stylesheet" type="text/css" href="design/css/gb3ok_main.css">
+<link rel="stylesheet" type="text/css" href="design/css/worldclock.css">
+<script type="text/javascript" src="design/js/copyright_date.js"></script>
+<script type="text/javascript" src="design/js/worldclock.js"></script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body onLoad="javascript:GetTime();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td class="logo_gb3ok">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td id="menuline">Javascript Menu Loading</td>
+  </tr>
+  <tr> 
+    <td><!-- InstanceBeginEditable name="EditRegion3" -->
+      <table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td class="headerlarge">World Clock</td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="maintext_border"><p class="headermedium">A Brief History 
+                    of World Time</p>
+                  <p>As the United Kingdom grew into an advanced maritime nation, 
+                    British mariners kept at least one timepiece on GMT in order 
+                    to calculate their longitude from the Greenwich meridian, 
+                    which was by convention considered to have longitude zero 
+                    degrees. This did not affect shipboard time itself, which 
+                    was still solar time. This, combined with mariners from other 
+                    nations drawing from Nevil Maskelyne's method of lunar distances 
+                    based on observations at Greenwich, eventually led to GMT 
+                    being used world-wide as a reference time independent of location. 
+                    Most time zones were based upon this reference as a number 
+                    of hours and half-hours &quot;ahead of GMT&quot; or &quot;behind 
+                    GMT&quot;. </p>
+                  <p>Greenwich Mean Time was adopted across the island of Great 
+                    Britain by the Railway Clearing House in 1847, and by almost 
+                    all railway companies by the following year. It was gradually 
+                    adopted for other purposes, but a legal case in 1858 held 
+                    &quot;local mean time&quot; to be the official time. This 
+                    changed in 1880, when GMT was legally adopted throughout the 
+                    island of Great Britain. GMT was adopted on the Isle of Man 
+                    in 1883, Jersey in 1898 and Guernsey in 1913. Ireland adopted 
+                    Greenwich Mean Time in 1916, supplanting Dublin Mean Time. 
+                    Hourly time signals from Greenwich Observatory were first 
+                    broadcast on 5 February 1924. </p>
+                  <p>The daily rotation of the Earth is somewhat irregular and 
+                    is slowing down slightly. Atomic clocks constitute a much 
+                    more stable timebase. On 1 January 1972, GMT was replaced 
+                    as the international time reference by Coordinated Universal 
+                    Time, maintained by an ensemble of atomic clocks around the 
+                    world. UT1, introduced in 1928, represents earth rotation 
+                    time. Leap seconds are added to or subtracted from UTC to 
+                    keep it within 0.9 seconds of UT1.</p>
+                  <p>The international prime meridian is no longer precisely the 
+                    Greenwich meridian, but remains close to it (5.31&quot;E).</p></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="navbarbottom"><a href="http://wwp.greenwichmeantime.com" target="_blank">wwp.greenwichmeantime.com</a>&nbsp;&nbsp; 
+                  <a href="http://www.worldtimezone.com" target="_blank">www.worldtimezone.com</a></td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="border" align="center" bgcolor="#EBF1F9"><form name="clock" action="">
+                    <table width="730" border="0" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td colspan="7" align="center"> <table width="98%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr> 
+                              <td width="8">&nbsp;</td>
+                              <td class="worldclock_top" width="129">Local Time</td>
+                              <td width="17">&nbsp;</td>
+                              <td width="74"><input type="text" size="8" name="local" class="worldclock_time"></td>
+                              <td width="22">&nbsp;</td>
+                              <td class="worldclock_top" width="286">Greenwich 
+                                Mean Time (GMT)</td>
+                              <td width="16">&nbsp;</td>
+                              <td width="163"><input type="text" size="8" name="_GMT" class="worldclock_time"></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr> 
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr> 
+                        <td colspan="7"><hr></td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west"><span class="worldclock_large">West 
+                          of Greenwich</span></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="worldclock_east"><span class="worldclock_large">East 
+                          of Greenwich</span></td>
+                      </tr>
+                      <tr> 
+                        <td colspan="7"><hr></td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Azores (GMT-1)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="azo" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"><font color="#FF0000"> 
+                          <input type="text" size="8" name="rome" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+1) Rome</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Mid-Atlantic (GMT-2)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="mid" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="Israel" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+2) Israel</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Brazilia (GMT-3)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="bra" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="msw" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+3) Moscow</td>
+                      </tr>
+                      <tr> 
+                        <td width="277"> <div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#6600FF"><b><font color="#0000FF"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></font></b></font></font></div></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"><font face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48">&nbsp;</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="267"> <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#669966"><font color="#339933"><b><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></b></font></font></font></div></td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Atlantic Time 
+                          (GMT-4)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="atl" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="baku" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+4) Baku</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Eastern Time (GMT-5)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="east" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="del" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+5) New Delhi</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Central Time (GMT-6)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="center" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="dh" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+6) Dhakar</td>
+                      </tr>
+                      <tr> 
+                        <td width="277"> <div align="right"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#6600FF"><b><font color="#0000FF"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></font></b></font></font></div></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"><font face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48">&nbsp;</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="267"> <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#669966"><font color="#339933"><b><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></b></font></font></font></div></td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Mountain Time 
+                          (GMT-7)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="mount" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="kok" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+7) Bangkok</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Pacific Time (GMT-8)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="pacif" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="ho" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+8) Hong Kong</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Alaska (GMT-9)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="alaska" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="tky" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+9) Tokyo</td>
+                      </tr>
+                      <tr> 
+                        <td width="277"> <div align="right"><font color="#6600FF"><b><font color="#0000FF"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></font></b></font></div></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"><font face="Verdana, Arial, Helvetica, sans-serif">&nbsp; 
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48">&nbsp;</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="267"> <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#669966"><font color="#339933"><b><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><font size="2"></font></font></font></b></font></font></font></div></td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277" height="22">Hawaii 
+                          (GMT-10)</td>
+                        <td width="30" height="22">&nbsp;</td>
+                        <td width="48" height="22"><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="Hawaii" class="worldclock_time">
+                          </font></td>
+                        <td width="30" height="22">&nbsp;</td>
+                        <td width="48" height="22"> <input type="text" size="8" name="sdn" class="worldclock_time"> 
+                        </td>
+                        <td width="30" height="22">&nbsp;</td>
+                        <td class="worldclock_east" width="267" height="22">(GMT+10) 
+                          Sydney </td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Samoa (GMT-11)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="sam" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="mag" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+11) Magadan</td>
+                      </tr>
+                      <tr> 
+                        <td class="worldclock_west" width="277">Eniwetok (GMT-12)</td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <font face="Verdana, Arial, Helvetica, sans-serif"> 
+                          <input type="text" size="8" name="eniw" class="worldclock_time">
+                          </font></td>
+                        <td width="30">&nbsp;</td>
+                        <td width="48"> <input type="text" size="8" name="wll" class="worldclock_time"> 
+                        </td>
+                        <td width="30">&nbsp;</td>
+                        <td class="worldclock_east" width="267">(GMT+12) Wellington</td>
+                      </tr>
+                    </table>
+                    <div align="left"></div>
+                    <div align="center"></div>
+                  </form></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="navbarbottom">Abbreviations and Definitions</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr> 
+                <td class="border"> <table width="100%" border="0" cellpadding="0" cellspacing="2">
+                    <tr> 
+                      <td class="worldzones_left" colspan="3"><p class="headermedium">Definition 
+                          of time zones</p>
+                        <p>A time zone item specifies an international time zone, 
+                          indicated by a small set of letters. </p>
+                        <p>Military time zone designations use a single letter 
+                          (except j).&nbsp; Zulu Time (z) represents Greenwich 
+                          Mean Time (GMT).</p>
+                        <p>Here are the most common standard-time time zones, 
+                          indexed by the zone hour value.</p></td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_header" width="10%">GMT<br>
+                        offset</td>
+                      <td class="worldzones_header" width="80%"> Time Zone Abbreviations<br>
+                        West of Greenwich</td>
+                      <td class="worldzones_header" width="10%">Military<br>
+                        Time<br>
+                        Zone</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-0:00 </td>
+                      <td class="worldzones_left">GMT = Greenwich Mean Time<br>
+                        UT or UTC for Universal (Coordinated) Time<br>
+                        WET for Western European Time</td>
+                      <td class="worldzones_center">z</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-1:00 </td>
+                      <td class="worldzones_left">WAT = West Africa Time</td>
+                      <td class="worldzones_center">a</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-2:00 </td>
+                      <td class="worldzones_left">AT = Azores Time</td>
+                      <td class="worldzones_center">b</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-3:00 </td>
+                      <td class="worldzones_left">&nbsp;</td>
+                      <td class="worldzones_center">c</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-4:00 </td>
+                      <td class="worldzones_left">AST = Atlantic Standard Time 
+                        (Canada)</td>
+                      <td class="worldzones_center">d</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-5:00 </td>
+                      <td class="worldzones_left">EST = Eastern Standard Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">e</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-6:00 </td>
+                      <td class="worldzones_left">CST = Central Standard Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">f</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-7:00 </td>
+                      <td class="worldzones_left">MST = Mountain Standard Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">g</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-8:00 </td>
+                      <td class="worldzones_left">PST = Pacific Standard Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">h</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-9:00 </td>
+                      <td class="worldzones_left">AKST Alaska Standard Time (USA)<br>
+                        YST = Yukon Standard Time (Canada)</td>
+                      <td class="worldzones_center">i</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-10:00 </td>
+                      <td class="worldzones_left">HST = Hawaii Standard Time<br>
+                        HAST Hawaii-Aleutian Standard Time (USA)<br> <i>AHST = 
+                        Alaska-Hawaii Standard Time (obs)</i><br>
+                        CAT = Central Alaska Time</td>
+                      <td class="worldzones_center">k</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-11:00 </td>
+                      <td class="worldzones_left">NT = Nome Time</td>
+                      <td class="worldzones_center">l</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-12:00 </td>
+                      <td class="worldzones_left">IDLW = International Date Line 
+                        West</td>
+                      <td class="worldzones_center">m</td>
+                    </tr>
+                  </table>
+                  &nbsp; <table id="table17" width="100%" cellpadding="2">
+                    <tr> 
+                      <td class="worldzones_header" width="10%">GMT<br>
+                        offset</td>
+                      <td class="worldzones_header" width="80%"> <p style="text-align: center">Time 
+                          Zone Abbreviations<br>
+                          East of Greenwich </td>
+                      <td class="worldzones_header" width="10%"> <p style="text-align: center">Military<br>
+                          Time<br>
+                          Zone</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+1:00 </td>
+                      <td class="worldzones_left">CET = Central European Time<br>
+                        FWT = French Winter Time (France)<br>
+                        MET = Middle European Time<br>
+                        MEWT = Middle European Winter Time<br>
+                        SWT = Swedish Winter Time (Sweden)</td>
+                      <td class="worldzones_center">n</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+2:00 </td>
+                      <td class="worldzones_left">EET = Eastern European Time, 
+                        USSR Zone 1</td>
+                      <td class="worldzones_center">o</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+3:00 </td>
+                      <td class="worldzones_left">BT = Baghdad Time, USSR Zone 
+                        2</td>
+                      <td class="worldzones_center">p</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+4:00 </td>
+                      <td class="worldzones_left">ZP4 = USSR Zone 3</td>
+                      <td class="worldzones_center">q</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+5:00 </td>
+                      <td class="worldzones_left">ZP5 = USSR Zone 4. </td>
+                      <td class="worldzones_center">r</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+6:00 </td>
+                      <td class="worldzones_left">ZP6 = USSR Zone 5. </td>
+                      <td class="worldzones_center">s</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+7:00 </td>
+                      <td class="worldzones_left">CXT = Christmas Island Time 
+                        (Australia)</td>
+                      <td class="worldzones_center">t</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+8:00 </td>
+                      <td class="worldzones_left">CCT = China Coast Time, USSR 
+                        Zone 7<br>
+                        AWST = Australian Western Standard Time<br>
+                        WST = Western Standard Time (Australia)</td>
+                      <td class="worldzones_center">u</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+9:00 </td>
+                      <td class="worldzones_left">JST = Japan Standard Time, USSR 
+                        Zone 8</td>
+                      <td class="worldzones_center">v</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+10:00 </td>
+                      <td class="worldzones_left">EAST = East Australian Standard 
+                        Time<br>
+                        EST = Eastern Standard Time (Australia)<br>
+                        GST = Guam Standard Time, USSR Zone 9 </td>
+                      <td class="worldzones_center">w</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+11:00 </td>
+                      <td class="worldzones_left">&nbsp;</td>
+                      <td class="worldzones_center">x</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+12:00 </td>
+                      <td class="worldzones_left">IDLE = International Date Line 
+                        East<br>
+                        NZST = New Zealand Standard Time<br>
+                        NZT = New Zealand Time</td>
+                      <td class="worldzones_center">y</td>
+                    </tr>
+                  </table>
+                  <table id="table15" width="100%" cellpadding="2">
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="headermedium" colspan="3">Daylight Saving Time 
+                        (DST) time zones, indexed by the zone hour value. </td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_header" width="10%">GMT<br>
+                        offset</td>
+                      <td class="worldzones_header" width="80%"> <p style="text-align: center">Time 
+                          Zone Abbreviations<br>
+                          East of Greenwich
+                      </td>
+                      <td class="worldzones_header" width="10%"> <p style="text-align: center">Military<br>
+                          Time<br>
+                          Zone</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-3:00 </td>
+                      <td class="worldzones_left">ADT = Atlantic Daylight Time 
+                        (Canada)</td>
+                      <td class="worldzones_center">c</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-4:00 </td>
+                      <td class="worldzones_left">EDT = Eastern Daylight Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">d</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-5:00 </td>
+                      <td class="worldzones_left">CDT = Central Daylight Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">e</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-6:00 </td>
+                      <td class="worldzones_left">MDT = Mountain Daylight Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">f</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-7:00 </td>
+                      <td class="worldzones_left">PDT = Pacific Daylight Time 
+                        (USA &amp; Canada)</td>
+                      <td class="worldzones_center">g</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-8:00 </td>
+                      <td class="worldzones_left">AKDT = Alaska Daylight Time 
+                        (USA)<br>
+                        YDT = Yukon Daylight Time (Canada)<br>
+                        HADT = Hawaii-Aleutian Daylight Time (USA)</td>
+                      <td class="worldzones_center">h</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">-9:00 </td>
+                      <td class="worldzones_left">HDT = Hawaii Daylight Time (USA)</td>
+                      <td class="worldzones_center">i</td>
+                    </tr>
+                  </table>
+                  <br> <table id="table16" width="100%" cellpadding="2">
+                    <tr> 
+                      <td class="worldzones_header" width="10%">GMT<br>
+                        offset</td>
+                      <td class="worldzones_header" width="80%"> Time Zone Abbreviations<br>
+                        West of Greenwich</td>
+                      <td class="worldzones_header" width="10%"> Military<br>
+                        Time<br>
+                        Zone</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+1:00</td>
+                      <td class="worldzones_left">BST = British Summer Time (UK)<br>
+                        IST = Irish Summer Time (Ireland)<br>
+                        WEDT = Western European Daylight Time<br>
+                        WEST Western European Summer Time</td>
+                      <td class="worldzones_center">n</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+2:00 </td>
+                      <td class="worldzones_left">CEDT = Central European Daylight 
+                        Time <br>
+                        CEST = Central European Summer Time<br>
+                        MEST = Middle European Summer Time<br>
+                        MESZ = Middle European Summer Time<br>
+                        SST = Swedish Summer Time (Sweden)<br>
+                        FST = French Summer Time (France) </td>
+                      <td class="worldzones_center">o</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+3:00</td>
+                      <td class="worldzones_left">EEDT = Eastern European Daylight 
+                        Time <br>
+                        EEST Eastern European Summer Time</td>
+                      <td class="worldzones_center">p</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+8:00 </td>
+                      <td class="worldzones_left">WADT = West Australian Daylight 
+                        Time</td>
+                      <td class="worldzones_center">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+11:00 </td>
+                      <td class="worldzones_left">EADT = Eastern Australian Daylight 
+                        Time<br>
+                        EST = Eastern Summer (Daylight) Time (Australia)</td>
+                      <td class="worldzones_center">x</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_center">+13:00 </td>
+                      <td class="worldzones_left">NZDT = New Zealand Daylight 
+                        Time</td>
+                      <td class="worldzones_center">n/a</td>
+                    </tr>
+                    <tr> 
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="worldzones_left" colspan="3"><p class="headermedium">French 
+                          Time Zone Abbreviations</p>
+                        <p>HAA = Heure Avancée de l'Atlantique GMT-3<br>
+                          HAC = Heure Avancée du Centre GMT-5<br>
+                          HAE = Heure Avancée de l'Est GMT-4 <br>
+                          HAP = Heure Avancée du Pacifique GMT-7 <br>
+                          HAR = Heure Avancée des Rocheuses GMT-6 <br>
+                          HAT = Heure Avancée de Terre-Neuve GMT-2:30<br>
+                          HAY = Heure Avancée du Yukon GMT-8 <br>
+                          HNA = Heure Normale de l'Atlantique GMT-4<br>
+                          HNC = Heure Normale du Centre GMT-6 <br>
+                          HNE = Heure Normale de l'Est GMT-5 <br>
+                          HNP = Heure Normale du Pacifique GMT-8<br>
+                          HNR = Heure Normale des Rocheuses GMT-7<br>
+                          HNT = Heure Normale de Terre-Neuve GMT-3:30<br>
+                          HNY = Heure Normale du Yukon GMT-9</p>
+                        <p class="headermedium">German Time Zone Abbreviations 
+                        </p>
+                        <p>MESZ = Mitteleuropäische Sommerzeit GMT+2<br>
+                          MEZ = Mitteleuropäische Zeit GMT+1</p>
+                        <p class="headermedium">Non-standard Time Zones </p>
+                        <p>ACDT Australian Central Daylight Time Australia GMT+10:30<br>
+                          ACST Australian Central Standard Time Australia GMT+9:30 
+                        </p>
+                        <p>CST Central Summer (Daylight) Time Australia GMT+10:30 
+                          <br>
+                          CST Central Standard Time Australia GMT+9:30 </p>
+                        <p>IST = India Standard Time GMT+5:30</p>
+                        <p>NDT Newfoundland Daylight Time (Canada) GMT-2:30<br>
+                          NFT Norfolk (Island) Time (Australia) GMT+11:30 <br>
+                          NST Newfoundland Standard Time (Canada) GMT-3:30</p>
+                        <p class="headermedium">Military Time Zones </p>
+                        <p>The hourly zones are used by the military are referred 
+                          to by a letter of the alphabet (or their phonetic equivalent).</p>
+                        <p>The letter J is not used.</p>
+                        <p>The other 25 letters cover the 12 time zones to the 
+                          east of Greenwich and the 12 time zones to the west 
+                          of Greenwich.&nbsp; The 25th zone is Z (Zulu).&nbsp; 
+                          Zulu is the same as GMT or UTC.</p>
+                        <p>A - M are for time zones to the East of Greenwich<br>
+                          N - Y are for time zones to the West of Greenwich. </p></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <!-- InstanceEndEditable --></td>
+  </tr>
+  <tr> 
+    <td class="navbarbottom"><a href="#">Top of Page</a></td>
+  </tr>
+  <tr> 
+    <td class="bg_bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td class="lower_nav"><a href="index.html">Home</a>&nbsp; |&nbsp; <a href="donation_support.html">Donations</a>&nbsp; 
+            |&nbsp; <a href="guestbook2.html">Guestbook</a>&nbsp; |&nbsp; <a href="http://sitedreams.com/cgi-bin/radio/ikonboard.cgi" target="_blank">Forum</a></td>
+        </tr>
+        <tr> 
+          <td><table width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td align="center"> 
+                  <!-- Banner Code Begins -->
+                  <script type="text/javascript"><!--
+google_ad_client = "pub-1774457571951618";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "333333";
+google_color_bg = "333333";
+google_color_link = "FFFFCC";
+google_color_text = "FFFFFF";
+google_color_url = "FFFFFF";
+//--></script> <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+                  <!--  Banner Code Ends  -->
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td class="footertext"><table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr> 
+                <td class="footertext">Copyright &copy; 2004 - 
+                  <script type="text/JavaScript">
+/* <![CDATA[ */
+document.write( ""+copyright() );
+/* ]]> */
+</script> &nbsp; |&nbsp; <a href="privacy.html">Privacy Policy</a>&nbsp; |&nbsp; 
+                  <a href="sitemap.html">Sitemap</a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td><table width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td width="24%"><!-- InstanceBeginEditable name="EditRegion4" -->
+                  <table width="150" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td class="counter"> <script type="text/javascript" language="Javascript" src="http://www.sitedreams.com/brg/counters/counter.php?page=world_clock"><!--
+//--></script>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- InstanceEndEditable --></td>
+                <td width="52%">&nbsp;</td>
+                <td class="sitedreams" width="24%">Design by:&nbsp; <a href="http://sitedreams.com" target="_blank">SiteDreams</a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td><img src="design/images/spacer.gif" alt="spacer" width="750" height="10"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- MENU SCRIPT BEGINS -->
+<script type='text/javascript'>function Go(){return}</script>
+<script type='text/javascript' src='design/menu/menu_gb3ok_main.js'></script>
+<script type='text/javascript' src='design/menu/menu_com.js'></script>
+<noscript>
+Your browser does not support script
+</noscript>
+<!-- MENU SCRIPT ENDS -->
+</body>
+<!-- InstanceEnd --></html>
